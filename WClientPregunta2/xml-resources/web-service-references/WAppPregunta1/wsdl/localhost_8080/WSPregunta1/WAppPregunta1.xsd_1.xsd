@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://ws.company.pe/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.company.pe/">
+
+<xs:element name="obtenerInformacionGeneral" type="tns:obtenerInformacionGeneral" />
+
+<xs:element name="obtenerInformacionGeneralResponse" type="tns:obtenerInformacionGeneralResponse" />
+
+<xs:complexType name="obtenerInformacionGeneral">
+<xs:sequence>
+<xs:element name="titulo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="obtenerInformacionGeneralResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pelicula" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pelicula">
+<xs:sequence>
+<xs:element name="duracion" type="xs:string" minOccurs="0" />
+<xs:element name="genero" type="xs:string" minOccurs="0" />
+<xs:element name="restriccion" type="xs:string" minOccurs="0" />
+<xs:element name="titulo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

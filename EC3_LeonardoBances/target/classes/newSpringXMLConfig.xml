@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+    
+    <bean id="ATCcliente_Service" class="Implementaciones.clsATCcliente"/>
+    <bean id="Agencia_Service" class="Implementaciones.clsAgencia"/>
+    <bean id="Cliente_Service" class="Implementaciones.clsCliente"/>
+    <bean id="Pago_Service" class="Implementaciones.clsPago"/>
+    <bean id="ReservacionService" class="Implementaciones.clsReservacion"/>
+    
+</beans>
